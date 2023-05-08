@@ -1,431 +1,748 @@
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DIOT Timothée</title>
-    <meta name="description" content="Portfolio de DIOT Timothée - étudiant en BTS SIO">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DIOT Timothée</title>
+  <meta name="description" content="Portfolio de DIOT Timothée - étudiant en BTS SIO">
+
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <!--defer : permet de charger le js une fois que toute la page est chargée-->
+  <script src="./js/global.js" defer></script>
+  <script src="https://kit.fontawesome.com/6477c38972.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <!-- création du portfolio -->
-    <header class="header">
-        <div class="container d-flex">
-            <div class="logo">
-                DIOT Timothée
-            </div>
-            <nav class="navbar">
-                <ul class="menu list-unstyled">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="#About">A propos</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#Skills">Compétences</a></li>
-                    <li><a href="#Portfolio">Portfolio</a></li>
-                    <li><a href="information.html">Information personnel</a></li>  
-                    <li><a href="#Contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="droite">
-                <ul class="socials list-unstyled">
-                    <li>
-                        <a href="#" target="_blank">
-                            <svg width="18" class="icon Instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank"> 
-                            <svg width="18" class="icon Linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank">
-                            <svg width="18" class="icon Twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-                <button class="burger"><span class="bar"></span></button>
-            </div>
+  <!-- création du portfolio -->
+  <!--Header-->
+  <header class="header">
+    <div class="container d-flex">
+      <div class="logo">
+        DIOT Timothée
+      </div>
+      <nav class="navbar">
+        <ul class="menu list-unstyled">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="#about">A propos</a></li>
+          <li><a href="#parcours">Mon Parcours</a></li>
+          <li><a href="#services">Tableau E4</a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#portfolio">Mes projets</a></li>
+          <!--<li><a href="information.html">Information personnel</a></li>-->
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="droite">
+        <ul class="socials list-unstyled">
+          <li>
+            <a href="https://www.instagram.com/timothee_dt/?next=%2F" target="_blank">
+              <i class="fa-brands fa-instagram fa-xl"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/timothée-diot-7a542b22a/" target="_blank">
+              <i class="fa-brands fa-linkedin-in fa-xl"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/TimoTdtDev" target="_blank">
+              <i class="icon fa-brands fa-github"></i>
+            </a>
+          </li>
+        </ul>
+        <button class="burger"><span class="bar"></span></button>
+      </div>
+    </div>
+  </header>
+  <!--Hero-->
+  <section id="Accueil" class="Accueil">
+    <div class="container">
+      <div class="grid">
+        <div class="Accueil-item left">
+          <span>étudiant BTS SIO</span>
+          <h1 class="title">Bonjour, je suis DIOT Timothée</h1>
+          <p></p>
         </div>
-    </header>
-
-    <section id="Accueil" class="Accueil">
-        <div class="container">
-            <div class="grid">
-                <div class="Accueil-item left">
-                    <span>étudiant BTS SIO</span>
-                    <h1 class="title">Bonjour, je suis DIOT Timothée</h1>
-                    <p>...</p>
-                </div>
-                <div class="Accueil-item right">
-                    <div class="Accueil-avatar">
-                        <img src="img/avatar.png" alt="DIOT Timothée - étudiant en BTS SIO">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="about" class="about">
-        <div class="container">
-            <div class="grid">
-                <div class="grid-item">
-                    <h2 class="section-title">A propos</h2>
-                    <h3>Qui suis-je ?</h3>
-                    <p>Je m'appelle Diot Timothée, j'ai 20 ans. Je suis actuellement en seconde année de BTS SIO <strong>(Service Informatique aux Organisations) </strong> option SLAM <strong> (Solutions Logicielles et Applications Métier) </strong> au lycée Sainte-Marguerite située à Chambray-lès-Tours 37170
-                    </p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong>phrase importante en gras. </strong> Delectus fugit tempore consectetur! Exercitationem itaque veritatis expedita corrupti reprehenderit corporis ipsum nam, veniam doloremque enim. Totam esse eaque quod eligendi quas.
-                    </p>
-                    <ul>
-                        <li>Liste</li>
-                        <li>Liste</li>
-                        <li>Liste</li>
-                        <li>Liste</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="services" class="services">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Mes services</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, nostrum laudantium quae optio facere a minima nesciunt. Ea voluptatum quo, doloremque nam maiores molestias, animi totam quia exercitationem voluptatibus harum.</p>
-            </div>
-            <div class="grid">
-                <div class="grid-item">
-                    <div class="service">
-                        <div class="service-icon"> 
-                            <svg width="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path d="M176 80c-52.94 0-96 43.06-96 96 0 8.84 7.16 16 16 16s16-7.16 16-16c0-35.3 28.72-64 64-64 8.84 0 16-7.16 16-16s-7.16-16-16-16zM96.06 459.17c0 3.15.93 6.22 2.68 8.84l24.51 36.84c2.97 4.46 7.97 7.14 13.32 7.14h78.85c5.36 0 10.36-2.68 13.32-7.14l24.51-36.84c1.74-2.62 2.67-5.7 2.68-8.84l.05-43.18H96.02l.04 43.18zM176 0C73.72 0 0 82.97 0 176c0 44.37 16.45 84.85 43.56 115.78 16.64 18.99 42.74 58.8 52.42 92.16v.06h48v-.12c-.01-4.77-.72-9.51-2.15-14.07-5.59-17.81-22.82-64.77-62.17-109.67-20.54-23.43-31.52-53.15-31.61-84.14-.2-73.64 59.67-128 127.95-128 70.58 0 128 57.42 128 128 0 30.97-11.24 60.85-31.65 84.14-39.11 44.61-56.42 91.47-62.1 109.46a47.507 47.507 0 0 0-2.22 14.3v.1h48v-.05c9.68-33.37 35.78-73.18 52.42-92.16C335.55 260.85 352 220.37 352 176 352 78.8 273.2 0 176 0z"/>
-                            </svg>
-                        </div>
-                        <div class="service-content">
-                            <h3>GESTION DE PROJETS</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto placeat quas accusantium tempora neque adipisci, necessitatibus itaque nemo enim facere, dignissimos vel reiciendis illo saepe hic eligendi ut molestias architecto!</p>
-                        </div>
-                    </div>
-                    <div class="service">
-                        <div class="service-icon">
-                            <svg width="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M402.3 344.9l32-32c5-5 13.7-1.5 13.7 5.7V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h273.5c7.1 0 10.7 8.6 5.7 13.7l-32 32c-1.5 1.5-3.5 2.3-5.7 2.3H48v352h352V350.5c0-2.1.8-4.1 2.3-5.6zm156.6-201.8L296.3 405.7l-90.4 10c-26.2 2.9-48.5-19.2-45.6-45.6l10-90.4L432.9 17.1c22.9-22.9 59.9-22.9 82.7 0l43.2 43.2c22.9 22.9 22.9 60 .1 82.8zM460.1 174L402 115.9 216.2 301.8l-7.3 65.3 65.3-7.3L460.1 174zm64.8-79.7l-43.2-43.2c-4.1-4.1-10.8-4.1-14.8 0L436 82l58.1 58.1 30.9-30.9c4-4.2 4-10.8-.1-14.9z"/>
-                            </svg>
-                        </div>
-                        <div class="service-content">
-                            <h3>INTEGRATION WEB</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto placeat quas accusantium tempora neque adipisci, necessitatibus itaque nemo enim facere, dignissimos vel reiciendis illo saepe hic eligendi ut molestias architecto!</p>
-                        </div>
-                    </div>
-                    <div class="service">
-                        <div class="service-icon">
-                            <svg width="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M501.1 395.7L384 278.6c-23.1-23.1-57.6-27.6-85.4-13.9L192 158.1V96L64 0 0 64l96 128h62.1l106.6 106.6c-13.6 27.8-9.2 62.3 13.9 85.4l117.1 117.1c14.6 14.6 38.2 14.6 52.7 0l52.7-52.7c14.5-14.6 14.5-38.2 0-52.7zM331.7 225c28.3 0 54.9 11 74.9 31l19.4 19.4c15.8-6.9 30.8-16.5 43.8-29.5 37.1-37.1 49.7-89.3 37.9-136.7-2.2-9-13.5-12.1-20.1-5.5l-74.4 74.4-67.9-11.3L334 98.9l74.4-74.4c6.6-6.6 3.4-17.9-5.7-20.2-47.4-11.7-99.6.9-136.6 37.9-28.5 28.5-41.9 66.1-41.2 103.6l82.1 82.1c8.1-1.9 16.5-2.9 24.7-2.9zm-103.9 82l-56.7-56.7L18.7 402.8c-25 25-25 65.5 0 90.5s65.5 25 90.5 0l123.6-123.6c-7.6-19.9-9.9-41.6-5-62.7zM64 472c-13.2 0-24-10.8-24-24 0-13.3 10.7-24 24-24s24 10.7 24 24c0 13.2-10.7 24-24 24z"/>
-                            </svg>
-                        </div>
-                        <div class="service-content">
-                            <h3>DEVELOPPEMENTS SPECIFIQUES</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto placeat quas accusantium tempora neque adipisci, necessitatibus itaque nemo enim facere, dignissimos vel reiciendis illo saepe hic eligendi ut molestias architecto!</p>
-                        </div>
-                    </div>
-                    <div class="service">
-                        <div class="service-icon">
-                            <svg width="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M400 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V80c0-26.51-21.49-48-48-48zm0 400H48V80h352v352zm-35.864-241.724L191.547 361.48c-4.705 4.667-12.303 4.637-16.97-.068l-90.781-91.516c-4.667-4.705-4.637-12.303.069-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l59.792 60.277 141.352-140.216c4.705-4.667 12.303-4.637 16.97.068l22.536 22.718c4.667 4.706 4.637 12.304-.068 16.971z"/>
-                            </svg>
-                        </div>
-                        <div class="service-content">
-                            <h3>REFERENCEMENT NATUREL</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto placeat quas accusantium tempora neque adipisci, necessitatibus itaque nemo enim facere, dignissimos vel reiciendis illo saepe hic eligendi ut molestias architecto!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <div class="service">
-                        <div class="service-icon">
-                            <svg width="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/>
-                            </svg>
-                        </div>
-                        <div class="service-content">
-                            <h3>CONCEPTION GRAPHIQUE & WEBDESIGN</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto placeat quas accusantium tempora neque adipisci, necessitatibus itaque nemo enim facere, dignissimos vel reiciendis illo saepe hic eligendi ut molestias architecto!</p>
-                        </div>
-                    </div>
-                    <div class="service">
-                        <div class="service-icon">
-                            <svg width="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M370.72 133.28C339.458 104.008 298.888 87.962 255.848 88c-77.458.068-144.328 53.178-162.791 126.85-1.344 5.363-6.122 9.15-11.651 9.15H24.103c-7.498 0-13.194-6.807-11.807-14.176C33.933 94.924 134.813 8 256 8c66.448 0 126.791 26.136 171.315 68.685L463.03 40.97C478.149 25.851 504 36.559 504 57.941V192c0 13.255-10.745 24-24 24H345.941c-21.382 0-32.09-25.851-16.971-40.971l41.75-41.749zM32 296h134.059c21.382 0 32.09 25.851 16.971 40.971l-41.75 41.75c31.262 29.273 71.835 45.319 114.876 45.28 77.418-.07 144.315-53.144 162.787-126.849 1.344-5.363 6.122-9.15 11.651-9.15h57.304c7.498 0 13.194 6.807 11.807 14.176C478.067 417.076 377.187 504 256 504c-66.448 0-126.791-26.136-171.315-68.685L48.97 471.03C33.851 486.149 8 475.441 8 454.059V320c0-13.255 10.745-24 24-24z"/>
-                            </svg>
-                        </div>
-                        <div class="service-content">
-                            <h3>DYNAMISME DES PAGES</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto placeat quas accusantium tempora neque adipisci, necessitatibus itaque nemo enim facere, dignissimos vel reiciendis illo saepe hic eligendi ut molestias architecto!</p>
-                        </div>
-                    </div>
-                    <div class="service">
-                        <div class="service-icon">
-                            <svg width="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M610.5 373.3c2.6-14.1 2.6-28.5 0-42.6l25.8-14.9c3-1.7 4.3-5.2 3.3-8.5-6.7-21.6-18.2-41.2-33.2-57.4-2.3-2.5-6-3.1-9-1.4l-25.8 14.9c-10.9-9.3-23.4-16.5-36.9-21.3v-29.8c0-3.4-2.4-6.4-5.7-7.1-22.3-5-45-4.8-66.2 0-3.3.7-5.7 3.7-5.7 7.1v29.8c-13.5 4.8-26 12-36.9 21.3l-25.8-14.9c-2.9-1.7-6.7-1.1-9 1.4-15 16.2-26.5 35.8-33.2 57.4-1 3.3.4 6.8 3.3 8.5l25.8 14.9c-2.6 14.1-2.6 28.5 0 42.6l-25.8 14.9c-3 1.7-4.3 5.2-3.3 8.5 6.7 21.6 18.2 41.1 33.2 57.4 2.3 2.5 6 3.1 9 1.4l25.8-14.9c10.9 9.3 23.4 16.5 36.9 21.3v29.8c0 3.4 2.4 6.4 5.7 7.1 22.3 5 45 4.8 66.2 0 3.3-.7 5.7-3.7 5.7-7.1v-29.8c13.5-4.8 26-12 36.9-21.3l25.8 14.9c2.9 1.7 6.7 1.1 9-1.4 15-16.2 26.5-35.8 33.2-57.4 1-3.3-.4-6.8-3.3-8.5l-25.8-14.9zM496 400.5c-26.8 0-48.5-21.8-48.5-48.5s21.8-48.5 48.5-48.5 48.5 21.8 48.5 48.5-21.7 48.5-48.5 48.5zM224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm201.2 226.5c-2.3-1.2-4.6-2.6-6.8-3.9l-7.9 4.6c-6 3.4-12.8 5.3-19.6 5.3-10.9 0-21.4-4.6-28.9-12.6-18.3-19.8-32.3-43.9-40.2-69.6-5.5-17.7 1.9-36.4 17.9-45.7l7.9-4.6c-.1-2.6-.1-5.2 0-7.8l-7.9-4.6c-16-9.2-23.4-28-17.9-45.7.9-2.9 2.2-5.8 3.2-8.7-3.8-.3-7.5-1.2-11.4-1.2h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c10.1 0 19.5-3.2 27.2-8.5-1.2-3.8-2-7.7-2-11.8v-9.2z"/>
-                            </svg>
-                        </div>
-                        <div class="service-content">
-                            <h3>INTERFACE D'ADMINISTRATION</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto placeat quas accusantium tempora neque adipisci, necessitatibus itaque nemo enim facere, dignissimos vel reiciendis illo saepe hic eligendi ut molestias architecto!</p>
-                        </div>
-                    </div>
-                    <div class="service">
-                        <div class="service-icon">
-                            <svg width="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M272 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h224c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM160 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm112-108c0 6.6-5.4 12-12 12H60c-6.6 0-12-5.4-12-12V60c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v312z"/>
-                            </svg>
-                        </div>
-                        <div class="service-content">
-                            <h3>RESPONSIVE DESIGN</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto placeat quas accusantium tempora neque adipisci, necessitatibus itaque nemo enim facere, dignissimos vel reiciendis illo saepe hic eligendi ut molestias architecto!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>     
-    </section>
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Mes Compétences</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, nostrum laudantium quae optio facere a minima nesciunt. Ea voluptatum quo, doloremque nam maiores molestias, animi totam quia exercitationem voluptatibus harum.</p>
-            </div>
-            <div class="grid">
-                <div class="grid-item">
-                    <h3>Domaines de compétences</h3>
-                    <ul class="list-unstyled">
-                        <li>
-                            <h4>Compétence</h4>
-                            <p>description</p>
-                        </li>
-                        <li>
-                            <h4>Compétence</h4>
-                            <p>description</p>
-                        </li>
-                        <li>
-                            <h4>Compétence</h4>
-                            <p>description</p>
-                        </li>
-                        <li>
-                            <h4>Compétence</h4>
-                            <p>description</p>
-                        </li>
-                        <li>
-                            <h4>Compétence</h4>
-                            <p>description</p>
-                        </li>
-                        <li>
-                            <h4>Compétence</h4>
-                            <p>description</p>
-                        </li>
-                        <li>
-                            <h4>Compétence</h4>
-                            <p>description</p>
-                        </li>
-                        <li>
-                            <h4>Compétence</h4>
-                            <p>description</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="grid-item">
-                    <h3>Compétences en développement</h3>
-                    <div class="progress-bar">
-                        <div class="bar" style="width: 75%;">html</div>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="bar" style="width: 75%;">css</div>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="bar" style="width: 25%;">javascript</div>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="bar" style="width: 50%;">php</div>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="bar" style="width: 50%;">C#</div>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="bar" style="width: 50%;">JAVA</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-          <div class="section-header">
-            <h2 class="section-title">Porfolio</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius eos dolore obcaecati perspiciatis. Eos neque
-              similique placeat doloremque cupiditate, ut vero autem officia repellat explicabo, doloribus vel? Culpa, fuga
-              quod!</p>
+        <div class="Accueil-item right">
+          <div class="Accueil-avatar">
+            <img src="img/avatar.png" alt="DIOT Timothée - étudiant en BTS SIO">
           </div>
-          <ul class="grid portfolio-filters list-unstyled">
-            <li class="grid-item">
-              <a href="#">Tous les projets</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--A propos-->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="grid">
+        <div class="grid-item">
+          <h2 class="section-title">A propos</h2>
+          <h3>Qui suis-je ?</h3>
+          <p>Je m'appelle Diot Timothée, j'ai 20 ans. Je suis actuellement en seconde année de BTS SIO <strong>(Service
+              Informatique aux Organisations) </strong> option SLAM <strong> (Solutions Logicielles et Applications
+              Métier) </strong> au lycée Sainte-Marguerite situé à Chambray-lès-Tours 37170
+          </p>
+          <p>Dynamique, créatif et méthodique,
+            je suis passionné par les nouvelles technologies et je sais que depuis plusieurs années je me destine à
+            travailler dans ce domaine épanouissant.
+            Le Portfolio ci-présent vous expose les détails suivants :
+          </p>
+          <ul>
+            <li>mes études</li>
+            <li>mon parcours</li>
+            <li>mes compétences</li>
+            <li>mes projets</li>
+            <li>mon tableau E4</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="parcours" class="parcours">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Mon parcours et stages</h2>
+        <p>Voici mon parcours scolaire et mes différents stages réalisés en entreprises</p>
+      </div>
+      <div class="grid">
+        <!--Mon parcours-->
+        <div class="grid-item">
+          <div class="education">
+            <div class="timeline-box">
+              <div class="timeline shadow-dark">
+                <h2>Mon parcours</h2>
+                <!-- Timeline Item -->
+                <div class="timeline-item">
+                  <div class="circle-dot"></div>
+                  <h3 class="timeline-date">
+                    <i class="fa fa-calendar"></i>2021 - 2023
+                  </h3>
+                  <h4 class="timeline-title">BTS SIO <strong>(Service Informatique aux Organisations) </strong> à Sainte-Marguerite situé à Chambray-lès-Tours 37170 </h4>
+                  <p class="timeline-text">Option : <br>
+                    - SLAM <strong> (Solutions Logicielles et Applications Métier) </strong></p>
+                </div>
+                <!-- Timeline Item -->
+                <div class="timeline-item">
+                  <div class="circle-dot"></div>
+                  <h3 class="timeline-date">
+                    <i class="fa fa-calendar"></i>2018 - 2021
+                  </h3>
+                  <h4 class="timeline-title">Bac Général au Lycée Paul-Louis-Courier situé à Tours 37000</h4>
+                  <p class="timeline-text">Options :<br>
+                    - Mathématique<br>
+                    - Physique-Chimie</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid__item">
+          <div class="experience">
+            <div class="row">
+              <div class="timeline-box">
+                <div class="timeline shadow-dark">
+                  <h2 class="title">Mes stages en entreprises</h2>
+                  <!-- Item Experience CEP-SOCOTIC -->
+                  <div class="timeline-item">
+                    <img src="img/logo-cep-socotic.jpg" alt="projet de la ville" class="card-image">
+                    <div class="circle-dot"></div>
+                    <h3 class="timeline-date">
+                      <i class="fa fa-calendar"></i>06/03/2023 - 25/04/2023
+                    </h3>
+                    <h4 class="timeline-title">Stage : CEP-SOCOTIC</h4>
+                    <p class="timeline-text">
+                      Pendant la période de mon stage, j'ai travaillé sur les sites web éco-responsables
+                    </p>
+                    <p>
+                      et mis à jour le PHP d'un site WordPress
+                    </p>
+                  </div>
+                  <!--End Item-->
+                  <!-- Item Experience Faiveley -->
+                  <div class="timeline-item">
+                    <img src="img/logo-faiveley.png" alt="projet de la ville" class="card-image">
+                    <div class="circle-dot"></div>
+                    <h3 class="timeline-date">
+                      <i class="fa fa-calendar"></i>23/05/2022 - 25/06/2022
+                    </h3>
+                    <h4 class="timeline-title">Stage : Faivelay Transport</h4>
+                    <p class="timeline-text">
+                      Durant ce stage, j’ai eu pour mission de créer un guide utilisateur en format PDF pour aider</p>
+                    <p>la comphréhension du site web : WebCore Builder
+                    </p>
+                  </div>
+                  <!--End Item-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>   
+  </section>
+  <!--Mes services-->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Mon CV et tableau E4</h2>
+        <p>Vous trouverez ci-joint mon CV ainsi que mon tableau de synthèse E4</p>
+      </div>
+      <div class="grid">
+        <div class="grid-item cv-btn">
+          <a href="CV/202304_Diot_Timothee_CV.pdf" class="btn text-cv" download="202304_Diot_Timothee_CV.pdf">Voir le
+            CV</a>
+        </div>
+        <div class="grid-item cv-btn">
+          <a href="CV/tableauE4.pdf" class="btn text-cv" download="tableauE4.pdf">Voir le tableau de compétences E4</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Mes compétences-->
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Mes Compétences</h2>
+        <p>Au cours de ma formation, j'ai pu apprendre et m'améliorer dans certaines compétences</p>
+      </div>
+      <div class="grid">
+        <div class="grid-item">
+          <h3>Compétences en développement et base de données</h3>
+          <div class="progress-bar">
+            <div class="bar" data-width="100">HTML</div>
+          </div>
+          <div class="progress-bar">
+            <div class="bar" data-width="100">CSS</div>
+          </div>
+          <div class="progress-bar">
+            <div class="bar" data-width="40">Javascript</div>
+          </div>
+          <div class="progress-bar">
+            <div class="bar" data-width="90">PHP</div>
+          </div>
+          <div class="progress-bar">
+            <div class="bar" data-width="75">C#</div>
+          </div>
+          <div class="progress-bar">
+            <div class="bar" data-width="60">JAVA</div>
+          </div>
+          <div class="progress-bar">
+            <div class="bar" data-width="70">SQL</div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <h3>Compétences en Logiciels</h3>
+          <div class="progress-bar">
+            <div class="bar" data-width="80">Visual Studio Code</div>
+          </div>
+          <div class="progress-bar">
+            <div class="bar" data-width="90">PhpStorm</div>
+          </div>
+          <div class="progress-bar">
+            <div class="bar" data-width="100">Wamp</div>
+          </div>
+          <div class="progress-bar">
+            <div class="bar" data-width="90">IntelliJ Idea</div>
+          </div>
+          <div class="progress-bar">
+            <div class="bar" data-width="90">Suite office</div>
+          </div>
+          <div class="progress-bar">
+            <div class="bar" data-width="30">VMWare</div>
+          </div>
+          <div class="progress-bar">
+            <div class="bar" data-width="60">Virtual Box</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+
+  <!--Mes projets-->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Portfolio</h2>
+        <p>Au cours de ma formation, j'ai eu l'occassion de travailler sur plusieurs projets. Les projets étaient soit
+          en groupe ou soit tout seul. Pour plus d'information sur un projet, cliquez dessus </p>
+      </div>
+      <ul class="grid portfolio-filters list-unstyled">
+        <li class="grid-item">
+          <a href="#" class="active" data-filter="all">Tous les projets</a>
+        </li>
+        <li class="grid-item">
+          <a href="#" data-filter="web">Développement web</a>
+        </li>
+        <li class="grid-item">
+          <a href="#" data-filter="app">Applications</a>
+        </li>
+      </ul>
+      <!--Projet 1-->
+      <div class="grid">
+        <div class="grid-item">
+          <div class="card" data-category="web">
+            <img src="img/G4F_bis.png" alt="projet Geek4Fun" class="card-image">
+            <div class="card-inner">
+              <h3 class="card-title">Site web Geek4Fun</h3>
+              <p class="category">Développement Web</p>
+            </div>
+            <div class="card-overlay">
+              <a href="#" class="card-link" data-id="modal-1">+</a>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="modal-1">
+          <button class="modal-close">&times;</button>
+          <div class="modal-content">
+            <div class="container">
+              <div class="grid">
+                <div class="grid-item">
+                  <img src="img/G4F_bis.png" loading="lazy"
+                    class="card-image" alt="logo Geek4Fun" />
+                </div>
+                <div class="grid-item">
+                  <h4 class="modal-title h2">Site web Geek4Fun</h4>
+                  <p>
+                    <svg width="15" height="15" aria-hidden="true" focusable="false" data-prefix="far"
+                      data-icon="calendar" class="svg-inline--fa fa-calendar fa-w-14" role="img"
+                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                      <path fill="currentColor"
+                        d="M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z">
+                      </path>
+                    </svg>
+                    <i>Année : 2022-2023</i>
+                  </p>
+                  <p class="category">
+                    <svg width="15" height="15" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tag"
+                      class="svg-inline--fa fa-tag fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512">
+                      <path fill="currentColor"
+                        d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z">
+                      </path>
+                    </svg>
+                    Développement Web
+                  </p>
+                  <p>
+                    L'objectif de ce projet consistait à créer un site internet dédié au festival fictif Geek4Fun, un événement rassemblant les passionnés de cosplay et de jeux vidéo, proposant des ateliers et des concours variés.<br>
+
+                    Le festival offre aussi des ateliers de sensibilisation à la cybersécurité, donnant aux visiteurs l'opportunité d'apprendre comment se protéger des menaces sur Internet. Ces ateliers sont un excellent moyen de promouvoir les bonnes pratiques en matière de sécurité informatique et de sensibiliser le public aux risques liés à l'utilisation d'Internet.<br>
+                  </p>
+
+                  <h5 class="h3">Informations</h5>
+                  <p>
+                    Ma mission était donc de réaliser le site web dédié au festival, en collaboration avec une équipe, tout en y intégrant le module cybersécurité.
+                  </p>
+
+                  <h5 class="h3">Languages et logiciels</h5>
+
+                  <ul>
+                    <li>HTML, CSS</li>
+                    <li>Javascript</li>
+                    <li>Code Igniter 4</li>
+                    <li>phpMyAdmin</li>
+                    <li>MySql</li>
+                  </ul>
+
+                  <h2 class="h3">Compétences du bloc E4 validées sur ce projet: <h5>Gérer le Patrimoine Informatique</h5></h2>
+                  <p>
+                    ▸ Recenser et identifier les ressources numériques <br>
+                    <img src="img/geek4Fun/utilisateur.png" alt="droits utilisateur pour le projet Geek4Fun">
+                    ▸ Exploiter des référentiels, normes et standards adoptés par le prestataire informatique <br>
+                    <a href="pdf/geek4fun/CharteGraphique_PaletteCouleur.pdf" class="btn text-cv" target="_blank">Charte Graphique</a>
+                    ▸ Gérer des sauvegardes <br>
+                    <img src="img/geek4Fun/github_sauvegarde.PNG" alt="sauvegardes github">
+                    ▸ Vérifier le respect des règles d’utilisation des ressources numériques <br>
+                  </p>
+                  <h5>Répondre aux incidents et aux demandes d'assistance et d'évolution</h5>
+                  <p>
+                    ▸ Collecter, suivre et orienter des demandes <br>
+                    ▸ Traiter des demandes concernant les applications.
+                    <a href="pdf/geek4fun/Sensibilisation.pdf" class="btn text-cv" target="_blank">documentation sur la sensibilisation</a>
+                    <a href="pdf/geek4fun/Geek4Fun.pdf" class="btn text-cv" target="_blank">Cahier des charges</a>
+                  </p>
+                  <h5>Développer la présence en ligne de l'organisation</h5>
+                  <p>
+                    ▸ Participer à l’évolution d’un site Web exploitant les données de l’organisation.
+                  </p>
+                  <h5>Travailler en mode projet</h5>
+                  <img src="img/geek4Fun/codeWithMe.png" alt="codeWithMe">
+                  <a href="https://github.com/DevSkyLex/website_geek4fun" class="btn text-cv" target="_blank">Aller sur github</a>
+                  <h5>Organiser son développement professionnel</h5>
+                  <p>
+                    ▸ Mettre en place son environnement d’apprentissage personnel.
+                    <img src="img/geek4Fun/squellette.PNG" alt="arborescence site Geek4Fun">
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Projet 2-->
+        <div class="grid-item">
+          <div class="card" data-category="app">
+            <img src="img/monEpicerie/logo.PNG" alt="projet monEpicerie" class="card-image" width="400px" height="365px">
+            <div class="card-inner">
+              <h3 class="card-title">mon Epicerie</h3>
+              <p class="category">Applications</p>
+            </div>
+            <div class="card-overlay">
+              <a href="#" class="card-link" data-id="modal-2">+</a>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="modal-2">
+          <button class="modal-close">&times;</button>
+          <div class="modal-content">
+            <div class="container">
+              <div class="grid">
+                <div class="grid-item">
+                  <img src="img/monEpicerie/logo.PNG" loading="lazy"
+                    class="card-image" alt="logo Geek4Fun" />
+                </div>
+                <div class="grid-item">
+                  <h4 class="modal-title h2">Mon épicerie</h4>
+                  <p>
+                    <svg width="15" height="15" aria-hidden="true" focusable="false" data-prefix="far"
+                      data-icon="calendar" class="svg-inline--fa fa-calendar fa-w-14" role="img"
+                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                      <path fill="currentColor"
+                        d="M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z">
+                      </path>
+                    </svg>
+                    <i>Année : 2022-2023</i>
+                  </p>
+                  <p class="category">
+                    <svg width="15" height="15" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tag"
+                      class="svg-inline--fa fa-tag fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512">
+                      <path fill="currentColor"
+                        d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z">
+                      </path>
+                    </svg>
+                    Applications
+                  </p>
+                  <p>
+                    Mon rôle était de fournir des services informatiques à disposition des employés de l'entreprise fictive "monEpicerie". Pour mener à bien cette mission, le projet était guidé par un cahier des charges. J'ai ainsi travaillé en collaboration avec les SISR pour mener à bien ce projet.
+                  </p>
+
+                  <h5 class="h3">Informations</h5>
+                  <p>
+                    Ma mission était donc de réaliser plusieurs missions qui durait entre 1 et 2 semaines.
+                  </p>
+
+                  <h5 class="h3">Languages et logiciels</h5>
+
+                  <ul>
+                    <li>HTML, CSS</li>
+                    <li>VMWare</li>
+                    <li>Virtual Box</li>
+                    <li>phpMyAdmin</li>
+                    <li>MySql</li>
+                  </ul>
+
+                  <h2 class="h3">Compétences du bloc E4 validées sur ce projet: <h5>Gérer le Patrimoine Informatique</h5></h2>
+                  <p>
+                    ▸ Recenser et identifier les ressources numériques <br>
+                    ▸ Exploiter des référentiels, normes et standards adoptés par le prestataire informatique <br>
+                    <img src="img/monEpicerie/normes.PNG" alt="normes pour le projet monEpicerie">
+                    ▸ Mettre en place et vérifier les niveaux d’habilitation associés à un service.
+                    <img src="img/monEpicerie/habilitation.PNG" alt="habilitation pour le projet monEpicerie">
+                    ▸ Gérer des sauvegardes <br>
+                    <img src="img/monEpicerie/sauvegarde.PNG" alt="sauvegardes monEpicerie">
+                    ▸ Vérifier le respect des règles d’utilisation des ressources numériques <br>
+                  </p>
+                  <h5>Répondre aux incidents et aux demandes d'assistance et d'évolution</h5>
+                  <p>
+                    ▸ Collecter, suivre et orienter des demandes <br>
+                    ▸ Traiter des demandes concernant les services réseau et système, applicatifs.
+                    <a href="pdf/monEpicerie/monEpicerie.pdf" class="btn text-cv" target="_blank">Cahier des charges</a>
+                  </p>
+                  <h5>Travailler en mode projet</h5>
+                  <p>
+                    ▸ Planifier les activités
+                  </p>
+                  <img src="img/monEpicerie/gantt.PNG" alt="gantt de monEpicerie">
+                  <h5>Organiser son développement professionnel</h5>
+                  <p>
+                    ▸ Mettre en place son environnement d’apprentissage personnel.
+                    <img src="img/monEpicerie/squelette.PNG" alt="arborescence missions monEpicerie">
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="card" data-category="app">
+            <img src="img/geek4Fun/Geek4FunAndroid.png" alt="projet monEpicerie" class="card-image" width="400px" height="365px">
+            <div class="card-inner">
+              <h3 class="card-title">Geek4Fun Application Android</h3>
+              <p class="category">Applications</p>
+            </div>
+            <div class="card-overlay">
+              <a href="#" class="card-link" data-id="modal-3">+</a>
+            </div>
+          </div>
+        </div>
+        <!--Projet 3-->
+        <div class="modal" id="modal-3">
+          <button class="modal-close">&times;</button>
+          <div class="modal-content">
+            <div class="container">
+              <div class="grid">
+                <div class="grid-item">
+                  <img src="img/geek4Fun/Geek4FunAndroid.png" loading="lazy"
+                    class="card-image" alt="logo Geek4Fun" />
+                </div>
+                <div class="grid-item">
+                  <h4 class="modal-title h2">geek4Fun application Android</h4>
+                  <p>
+                    <svg width="15" height="15" aria-hidden="true" focusable="false" data-prefix="far"
+                      data-icon="calendar" class="svg-inline--fa fa-calendar fa-w-14" role="img"
+                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                      <path fill="currentColor"
+                        d="M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z">
+                      </path>
+                    </svg>
+                    <i>Année : 2023</i>
+                  </p>
+                  <p class="category">
+                    <svg width="15" height="15" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tag"
+                      class="svg-inline--fa fa-tag fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512">
+                      <path fill="currentColor"
+                        d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z">
+                      </path>
+                    </svg>
+                    Applications
+                  </p>
+                  <p>
+                    Mon rôle était de corriger et d'améliorer l'application Geek4Fun Android pour permettre de déployer l'application sur les tablettes durant le festival.
+                  </p>
+
+                  <h5 class="h3">Informations</h5>
+                  <p>
+                    Ma mission était donc d'améliorer la partie quizz de l'application Android.
+                  </p>
+
+                  <h5 class="h3">Languages et logiciels</h5>
+
+                  <ul>
+                    <li>JAVA</li>
+                    <li>SQLite</li>
+                    <li>IntelliJ IDEA</li>
+                  </ul>
+
+                  <h2 class="h3">Compétences du bloc E4 validées sur ce projet: <h5>Gérer le Patrimoine Informatique</h5></h2>
+                  <p>
+                    ▸ Recenser et identifier les ressources numériques <br>
+                    <a href="pdf/geek4fun/Geek4Fun_Android.pdf" class="btn text-cv">Cahier des charges</a>
+                    ▸ Exploiter des référentiels, normes et standards adoptés par le prestataire informatique <br>
+                    <img src="img/geek4Fun/normesAndroid.PNG" alt="normes pour le projet geek4Fun Android">
+                    ▸ Gérer des sauvegardes <br>
+                    <p>Des sauvegardes ont été faites sur un disque externe</p>
+                    <img src="img/geek4Fun/sauvegardeAndroid.PNG" alt="sauvegarde pour le projet geek4Fun Android">
+                  </p>
+                  <h5>Répondre aux incidents et aux demandes d'assistance et d'évolution</h5>
+                  <p>
+                    ▸ Collecter, suivre et orienter des demandes <br>
+                    ▸ Traiter des demandes concernant les applications
+                    <a href="pdf/geek4fun/Geek4Fun_Android.pdf" class="btn text-cv" target="_blank">Cahier des charges</a>
+                    <img src="img/geek4Fun/application.PNG" alt="traiter des demandes concernant les applications pour le projet geek4Fun Android">
+                  </p>
+                  <h5>Travailler en mode projet</h5>
+                  <h5>Organiser son développement professionnel</h5>
+                  <p>
+                    ▸ Mettre en place son environnement d’apprentissage personnel.
+                    <img src="img/geek4Fun/squellete.PNG" alt="arborescence projet Geek4Fun Android">
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="card" data-category="web">
+            <img src="img/favicon.ico" alt="mon portfolio" class="card-image" width="400px" height="365px">
+            <div class="card-inner">
+              <h3 class="card-title">Mon portfolio</h3>
+              <p class="category">Développement Web</p>
+            </div>
+            <div class="card-overlay">
+              <a href="#" class="card-link" data-id="modal-4">+</a>
+            </div>
+          </div>
+        </div>
+        <!--Projet 3-->
+        <div class="modal" id="modal-4">
+          <button class="modal-close">&times;</button>
+          <div class="modal-content">
+            <div class="container">
+              <div class="grid">
+                <div class="grid-item">
+                  <img src="img/favicon.ico" loading="lazy"
+                    class="card-image" alt="logo portfolio" />
+                </div>
+                <div class="grid-item">
+                  <h4 class="modal-title h2">Mon portfolio</h4>
+                  <p>
+                    <svg width="15" height="15" aria-hidden="true" focusable="false" data-prefix="far"
+                      data-icon="calendar" class="svg-inline--fa fa-calendar fa-w-14" role="img"
+                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                      <path fill="currentColor"
+                        d="M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z">
+                      </path>
+                    </svg>
+                    <i>Année : 2023</i>
+                  </p>
+                  <p class="category">
+                    <svg width="15" height="15" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tag"
+                      class="svg-inline--fa fa-tag fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512">
+                      <path fill="currentColor"
+                        d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z">
+                      </path>
+                    </svg>
+                    Développement Web
+                  </p>
+                  <p>
+                    Conception et réalisation d'un portfolio, permettant de recenser toutes mes compétences et mes projets.
+                  </p>
+
+                  <h5 class="h3">Informations</h5>
+                  <p>
+                    En créant ce portfolio, mon objectif était de concevoir un site internet pour présenter mes compétences et mes projets aux entreprises et aux établissements scolaires.
+                  </p>
+
+                  <h5 class="h3">Languages et logiciels</h5>
+
+                  <ul>
+                    <li>HTML/CSS</li>
+                    <li>Javascript</li>
+                    <li>GitHub</li>
+                  </ul>
+
+                  <h2 class="h3">Compétences du bloc E4 validées sur ce projet: <h5>Gérer le Patrimoine Informatique</h5></h2>
+                  <p>
+                    ▸ Exploiter des référentiels, normes et standards adoptés par le prestataire informatique <br>
+                    <img src="img/portfolio/normes.PNG" alt="normes pour le portfolio">
+                    ▸ Gérer des sauvegardes <br>
+                    <a href="https://github.com/TimoTdtDev/portfolio" class="btn text-cv" target="_blank">Sauvegarde GitHub</a>
+                    ▸ Vérifier les conditions de la continuité d'un service informatique.
+                    <img src="img/portfolio/commentaire.PNG" alt="commentaires sur le code pour le portfolio">
+                  </p>
+                  <h5>Répondre aux incidents et aux demandes d'assistance et d'évolution</h5>
+                  <p>
+                    ▸ Collecter, suivre et orienter des demandes <br>
+                    ▸ Traiter des demandes concernant les applications
+                  </p>
+                  <h5>Développer la présence en ligne de l'organisation</h5>
+                  <p>
+                    ▸ Participer à la valorisation de l’image de l’organisation sur les médias numériques en tenant compte du cadre juridique et des enjeux économiques. <br>
+                    ▸ Référencer les services en ligne de l’organisation et mesurer leur visibilité <br>
+                    ▸ Participer à l’évolution d’un site Web exploitant les données de l’organisation <br>
+                    <a href="https://timotdtdev.github.io/portfolio/" class="btn text-cv" target="_blank">Lien Portfolio</a>
+                  </p>
+                  <h5>Travailler en mode projet</h5>
+                  <h5>Mettre à disposition des utilisateurs un service informatique</h5>
+                  <p>
+                    ▸ Déployer un service
+                    <a href="https://timotdtdev.github.io/portfolio/" class="btn text-cv" target="_blank">Lien Portfolio</a>
+                  </p>
+                  <h5>Organiser son développement professionnel</h5>
+                  <p>
+                    ▸ Mettre en place son environnement d’apprentissage personnel. <br>
+                    ▸ Gérer son identité professionnelle <br>
+                    ▸ Développer son projet professionnel
+                    <a href="https://timotdtdev.github.io/portfolio/" class="btn text-cv" target="_blank">Lien Portfolio</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+
+      </div>
+    </div>
+  </section>
+  <!--Me contacter-->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Contact</h2>
+        <p>Pour plus d'informations, vous pouvez me contacter en remplissant ce formulaire ci-dessous :</p>
+      </div>
+    </div>
+    <form action="contact.php" class="form">
+      <label for="firstname">Nom :
+        <input type="text" name="firstname" id="firstname" placeholder="Nom" required>
+      </label>
+      <label for="lastname">Prénom :
+        <input type="text" name="lastname" id="lastname" placeholder="Prénom" required>
+      </label>
+      <label for="email">Adresse mail :
+        <input type="email" name="email" id="email" placeholder="Adresse Mail" required>
+      </label>
+      <label for="message">Message :
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="message" required></textarea>
+        <input type="submit" value="Envoyer" class="btn">
+      </label>
+    </form>
+  </section>
+  <!--Bas de page-->
+  <footer>
+    <div class="container">
+      <div class="grid">
+        <div class="grid-item">
+          <p>DIOT Timothée</p>
+        </div>
+        <div class="grid-item">
+          <ul class="socials list-unstyled">
+            <li>
+              <a href="https://www.linkedin.com/in/timothée-diot-7a542b22a/" target="_blank">
+                <svg width="14" aria-hidden="true" class="icon linkedin" focusable="false" data-prefix="fab"
+                  data-icon="linkedin-in" class="svg-inline--fa fa-linkedin-in fa-w-14" role="img"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path fill="currentColor"
+                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                  </path>
+                </svg>
+              </a>
             </li>
-            <li class="grid-item">
-              <a href="#">Développement web</a>
+            <li>
+              <a href="https://github.com/TimoTdtDev" target="_blank">
+                <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                  <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                </svg>
+              </a>
             </li>
-            <li class="grid-item">
-              <a href="#">Applications</a>
+            <li>
+              <a href="https://www.instagram.com/timothee_dt/?next=%2F" target="_blank">
+                <svg width="14" aria-hidden="true" class="icon insta" focusable="false" data-prefix="fab"
+                  data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14" role="img"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path fill="currentColor"
+                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                  </path>
+                </svg>
+              </a>
             </li>
           </ul>
-          <div class="grid">
-            <div class="grid-item">
-              <div class="card">
-                <img src="https://picsum.photos/600/400?random=1" alt="projet de la ville" class="card-image">
-                <div class="card-inner">
-                  <h3 class="card-title">Titre du projet</h3>
-                  <p class="category">Développement Web</p>
-                </div>
-                <div class="card-overlay">
-                  <a href="#">+</a>
-                </div>
-              </div>
-            </div>
-              <div class="grid-item">
-                <div class="card">
-                  <img src="https://picsum.photos/600/400?random=2" alt="projet de la ville" class="card-image">
-                  <div class="card-inner">
-                    <h3 class="card-title">Titre du projet</h3>
-                    <p class="category">Refonte graphique</p>
-                  </div>
-                  <div class="card-overlay">
-                    <a href="#">+</a>
-                  </div>
-                </div>
-              </div>
-              <div class="grid-item">
-                <div class="card">
-                  <img src="https://picsum.photos/600/400?random=3" alt="projet de la ville" class="card-image">
-                  <div class="card-inner">
-                    <h3 class="card-title">Titre du projet</h3>
-                    <p class="category">Applications</p>
-                  </div>
-                  <div class="card-overlay">
-                    <a href="#">+</a>
-                  </div>
-                </div>
-              </div>
-              <div class="grid-item">
-                <div class="card">
-                  <img src="https://picsum.photos/600/400?random=4" alt="projet de la ville" class="card-image">
-                  <div class="card-inner">
-                    <h3 class="card-title">Titre du projet</h3>
-                    <p class="category">Développement Web</p>
-                  </div>
-                  <div class="card-overlay">
-                    <a href="#">+</a>
-                  </div>
-                </div>
-              </div>
-              <div class="grid-item">
-                <div class="card">
-                  <img src="https://picsum.photos/600/400?random=5" alt="projet de la ville" class="card-image">
-                  <div class="card-inner">
-                    <h3 class="card-title">Titre du projet</h3>
-                    <p class="category">Refonte graphique</p>
-                  </div>
-                  <div class="card-overlay">
-                    <a href="#">+</a>
-                  </div>
-                </div>
-              </div>
-              <div class="grid-item">
-                <div class="card">
-                  <img src="https://picsum.photos/600/400?random=3" alt="projet de la ville" class="card-image">
-                  <div class="card-inner">
-                    <h3 class="card-title">Titre du projet</h3>
-                    <p class="category">Applications</p>
-                  </div>
-                  <div class="card-overlay">
-                    <a href="#">+</a>
-                  </div>
-                </div>
-              </div>
-            
-          </div>
         </div>
-    
-      </section>
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Contact</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, nostrum laudantium quae optio facere a minima nesciunt. Ea voluptatum quo, doloremque nam maiores molestias, animi totam quia exercitationem voluptatibus harum.</p>
-            </div>
+        <div class="grid-item">
+          <p>Copyright © 2022 Portfolio DIOT Timothée. All Rights Reserved.</p>
         </div>
-        <form action="contact.php" class="form">
-            <label for="firstname">toto
-                <input type="text" name="firstname" id="firstname" placeholder="Nom">
-            </label>
-            <label for="lastname">toto
-                <input type="text" name="lastname" id="lastname" placeholder="Prénom">
-            </label>
-            <label for="email">toto
-                <input type="email" name="email" id="email" placeholder="Adresse Mail">
-            </label>
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="message"></textarea>
-            <input type="submit" value="Envoyer" class="btn">
-        </form>
-    </section>
-
-    <footer>
-        <div class="container">
-          <div class="grid">
-            <div class="grid-item">
-              <p>DIOT Timothée</p>
-            </div>
-            <div class="grid-item">
-              <ul class="socials list-unstyled">
-                <li>
-                  <a href=#>
-                    <svg width="14" aria-hidden="true" class="icon linkedin" focusable="false" data-prefix="fab"
-                      data-icon="linkedin-in" class="svg-inline--fa fa-linkedin-in fa-w-14" role="img"
-                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                      <path fill="currentColor"
-                        d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
-                      </path>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href=#>
-                    <svg width="14" aria-hidden="true" class="icon twitter" focusable="false" data-prefix="fab"
-                      data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img"
-                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                      <path fill="currentColor"
-                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
-                      </path>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href=#>
-                    <svg width="14" aria-hidden="true" class="icon insta" focusable="false" data-prefix="fab"
-                      data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14" role="img"
-                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                      <path fill="currentColor"
-                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
-                      </path>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="grid-item">
-              <p>Copyright © 2022 Portfolio DIOT Timothée. All Rights Reserved.</p>
-            </div>
-          </div>
-        </div>
-      </footer>
+      </div>
+    </div>
+  </footer>
 
 </body>
+
 </html>
